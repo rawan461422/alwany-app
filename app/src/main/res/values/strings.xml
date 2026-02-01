@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">ألواني</string>
+    <string name="ok">حسنا</string>
+    <string name="cancel">إلغاء</string>
+    <string name="enter_name">أكتب اسمك</string>
+    <string name="enter_email"> البريد الالكتروني</string>
+    <string name="forget_password">هل نسيت كلمة السر؟</string>
+    <string name="enter_your_password"> كلمة المرور</string>
+    <string name="please_enter_name">رجاءا أكتب اسمك</string>
+    <string name="please_enter_last_name">رجاءا أكتب اسم العائلة</string>
+    <string name="please_enter_email">رجاءا أكتب بريدك الالكتروني</string>
+    <string name="invalid_email">البريد الالكتروني الذي أدخلته ليس صحيحا، حاول مجددا</string>
+    <string name="please_forget_password">هل نسيت كلمة السر؟</string>
+    <string name="write_your_password">رجاءا أكتب كلمة المرور</string>
+    <string name="wrong_phone_number">رجاءا رقم الجوال يجب ان يبدأ ب 966 وألا يقل عن 12 رقم</string>
+    <string name="write_your_phone">رجاءا أكتب رقم الجوال</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="do_not_have_account_sign_up">ليس لديك حساب؟ إنشاء حساب</string>
+    <string name="sign_up">إنشاء حساب</string>
+    <string name="password_match">كلمتان المرور غير متطابقتان</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="wait">إنتظر من فضلك</string>
+    <string name="login">جاري تسجيل الدخول</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="first_name">الاسم</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="already_have_account_sign_in">لديك حساب بالفعل، سجل دخول الان</string>
+    <string name="send">إرسال</string>
+    <string name="reset_password">إعادة تعيين كلمة المرور</string>
+    <string name="profile">الحساب الشخصي</string>
+    <string name="sign_out">تسجيل الخروج</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">الأطباء</string>
+    <string name="menu_gallery">المستشفيات</string>
+    <string name="menu_slideshow">دليل الألوان</string>
+    <string name="menu_colors">إقتراحات الألوان</string>
+    <string name="menu_brief">نبذه</string>
+    <string name="menu_info">المعلومات</string>
+    <string name="menu_apps">التطبيقات</string>
+    <string name="menu_add_color">إضافة لون</string>
+    <string name="menu_add_info">إضافة معلومة</string>
+    <string name="menu_add_hospital">إضافة مستشفى</string>
+    <string name="menu_add_app">إضافة تطبيق مساعد</string>
+    <string name="select_image_title">اختر طريقة لاكتشاف اللون الصحيح</string>
+    <string name="camera_text">التقاط صورة</string>
+    <string name="gallery_text">صورة من الالبوم</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="color_name">اسم اللون</string>
+    <string name="show_details">عرض التفاصيل</string>
+    <string name="info_title">عنوان المعلومة</string>
+    <string name="app_link">رابط التطبيق</string>
+    <string name="helper_app_name">اسم التطبيق</string>
+    <string name="add">إضافة</string>
+    <string name="delete">حذف</string>
+    <string name="title_activity_outer">OuterActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="details">التفاصيل</string>
+    <string name="menu_logout">تسجيل الخروج</string>
+    <string name="menu_about_us">عن التطبيق</string>
+    <string name="menu">القائمة</string>
+    <string name="about_us">تطبيقنا الجديد يمثل خطوة مبتكرة نحو دعم المصابين بعمى الألوان، حيث يعتمد على تقنيات الذكاء الاصطناعي لتحسين تجربتهم اليومية. يتيح التطبيق للمستخدمين رفع الصور ومن ثم يقوم بتوجيههم بشكل صوتي حيال الألوان الموجودة في الصورة.
+
+بفضل محرك الذكاء الاصطناعي المتطور، يتم تحليل الألوان بدقة عالية وتقديم توجيه دقيق للمستخدمين حول ما يحتويه الصورة. يتميز التطبيق أيضًا بقسم خاص يوفر معلومات تثقيفية حول عمى الألوان وكيفية التفاعل مع البيئة بشكل أفضل.
+ومن أجل تحسين تمييز الألوان، يقدم التطبيق مجموعة من التمارين والتطبيقات التفاعلية التي تعزز التعرف على الألوان بشكل أفضل. بالإضافة إلى ذلك، يحتوي التطبيق على قسم خاص بتنسيق الألوان، حيث يمكن للمستخدمين اختيار الألوان المتناسقة مع بعضها البعض لتحسين تجربتهم البصرية وجعلها أكثر إرضاء.
+</string>
+    <string name="test">اختبار عمى الالوان</string>
+    <string name="predication">التنبوء بالألوان</string>
+
+
+    <string name="test_alert">هذا الاختبار توجيهي وليس طبي ، يرجى مراجعة الطبيب للتحقق من النتائج</string>
+    <string name="very_good">هنيًئا لك رؤيتك سليمة، نتمنى لك دوام الصحة والعافية</string>
+    <string name="green">ُربَما أنت ُمصاب بعمى اللون الأخضر (ديترومونالي)، يرجى مراجعة أقرب أخصائي بصريات للتأكد وتلقي المساعدة</string>
+    <string name="red">ُربَما أنت ُمصاب بعمى اللون الأحمر (بروتانومالي)، يرجى مراجعة أقرب أخصائي بصريات للتأكد وتلقي المساعدة</string>
+    <string name="blue">ُربَما أنت ُمصاب بعمى اللون الأزرق (تريتونومالي)، يرجى مراجعة أقرب أخصائي بصريات للتأكد وتلقي المساعدة </string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:showIn="navigation_view">
+
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_new_doctors"
+        android:icon="@drawable/doctor"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_admin_hospital"
+        android:icon="@drawable/ic_hospital"
+        android:title="@string/menu_gallery" />
+    <item
+        android:id="@+id/nav_admin_color"
+        android:icon="@drawable/ic_color_lens"
+        android:title="@string/menu_colors" />
+    <item
+        android:id="@+id/colorGuide"
+        android:icon="@drawable/color"
+        android:title="@string/menu_slideshow" />
+
+    <item
+        android:id="@+id/nav_admin_info"
+        android:icon="@drawable/info"
+        android:title="@string/menu_info" />
+    <item
+        android:id="@+id/nav_admin_apps"
+        android:icon="@drawable/application"
+        android:title="@string/menu_apps" />
+    <item
+        android:id="@+id/updateUrl"
+        android:icon="@drawable/baseline_update_24"
+        android:title="رابط المودل" />
+    <item
+        android:id="@+id/nav_admin_logout"
+        android:icon="@drawable/logout"
+        android:title="@string/menu_logout" />
+</group>
+</menu>

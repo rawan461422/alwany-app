@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_new_doctors">
+
+    <fragment
+        android:id="@+id/nav_new_doctors"
+        android:name="com.example.alwanyapp.Presentation.admin.Doctors.NewDoctorsFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_new_doctors">
+        <action
+            android:id="@+id/action_nav_new_doctors_to_nav_accepted_doctors"
+            app:destination="@id/nav_accepted_doctors" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_accepted_doctors"
+        android:name="com.example.alwanyapp.Presentation.admin.Doctors.AcceptedDoctorsFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_accepted_doctors">
+        <action
+            android:id="@+id/action_nav_accepted_doctors_to_nav_new_doctors"
+            app:destination="@id/nav_new_doctors" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_admin_hospital"
+        android:name="com.example.alwanyapp.Presentation.admin.Hospitals.HospitalFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_admin_hospital">
+        <action
+            android:id="@+id/action_nav_admin_hospital_to_nav_add_hospital"
+            app:destination="@id/nav_add_hospital" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_add_hospital"
+        android:name="com.example.alwanyapp.Presentation.admin.Hospitals.AddHospitalFragment"
+        android:label="@string/menu_add_hospital"
+        tools:layout="@layout/fragment_add_hospital" />
+
+    <fragment
+        android:id="@+id/nav_admin_color"
+        android:name="com.example.alwanyapp.Presentation.admin.Color.AdminColorFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_admin_color">
+        <action
+            android:id="@+id/action_nav_admin_color_to_nav_add_color"
+            app:destination="@id/nav_add_color" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_color"
+        android:name="com.example.alwanyapp.Presentation.admin.Color.AddColorFragment"
+        android:label="@string/menu_add_color"
+        tools:layout="@layout/fragment_add_color" />
+    <fragment
+        android:id="@+id/nav_admin_info"
+        android:name="com.example.alwanyapp.Presentation.admin.info.AdminInfoFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_admin_info">
+        <action
+            android:id="@+id/action_nav_admin_info_to_nav_admin_info_details"
+            app:destination="@id/nav_admin_info_details" />
+        <action
+            android:id="@+id/action_nav_admin_info_to_nav_add_info"
+            app:destination="@id/nav_add_info" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_info"
+        android:name="com.example.alwanyapp.Presentation.admin.info.AddInfoFragment"
+        android:label="@string/menu_add_info"
+        tools:layout="@layout/fragment_add_info" />
+    <fragment
+        android:id="@+id/nav_admin_info_details"
+        android:name="com.example.alwanyapp.Presentation.admin.info.AdminInfoDetailsFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_admin_info_details" />
+
+    <fragment
+        android:id="@+id/nav_admin_apps"
+        android:name="com.example.alwanyapp.Presentation.admin.apps.AdminHelperAppsFragment"
+        android:label="@string/menu_apps"
+        tools:layout="@layout/fragment_admin_helper_apps">
+        <action
+            android:id="@+id/action_nav_admin_apps_to_nav_admin_app_details"
+            app:destination="@id/nav_admin_app_details" />
+        <action
+            android:id="@+id/action_nav_admin_apps_to_nav_add_app"
+            app:destination="@id/nav_add_app" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_app"
+        android:name="com.example.alwanyapp.Presentation.admin.apps.AddHelperAppFragment"
+        android:label="@string/menu_add_app"
+        tools:layout="@layout/fragment_add_helper_app" />
+    <fragment
+        android:id="@+id/nav_admin_app_details"
+        android:name="com.example.alwanyapp.Presentation.admin.apps.AdminHelperAppDetailsFragment"
+        android:label="@string/menu_add_app"
+        tools:layout="@layout/fragment_admin_helper_app_details" />
+    <fragment
+        android:id="@+id/updateUrl"
+        android:name="com.example.alwanyapp.Presentation.admin.UpdateModelUrl"
+        tools:layout="@layout/fragment_update_model_url" />
+    <fragment
+        android:id="@+id/colorGuide"
+        android:label="دليل الالوان"
+        android:name="com.example.alwanyapp.Presentation.admin.ColorGuide.AdminColorGuide"
+        tools:layout="@layout/fragment_admin_color_guide" >
+        <action
+            android:id="@+id/action_colorGuide_to_addingColorGuide"
+            app:destination="@id/addingColorGuide" />
+    </fragment>
+    <fragment
+        android:id="@+id/addingColorGuide"
+        android:label=" إضافة لون"
+        android:name="com.example.alwanyapp.Presentation.admin.ColorGuide.AddingColorGuide"
+        tools:layout="@layout/fragment_adding_color_guide" >
+        <action
+            android:id="@+id/action_addingColorGuide_to_colorGuide"
+            app:destination="@id/colorGuide" />
+    </fragment>
+    <activity
+        android:id="@+id/nav_admin_logout"
+        android:name="com.example.alwanyapp.Presentation.auth.OuterActivity"
+        tools:layout="@layout/activity_outer" />
+</navigation>

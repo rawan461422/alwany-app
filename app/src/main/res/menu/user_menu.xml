@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/doctors"
+        android:icon="@drawable/doctor"
+        android:title="الاطباء" />
+    <item
+        android:id="@+id/consultations"
+        android:icon="@drawable/interview"
+        android:title="الاستشارات" />
+    <item
+        android:id="@+id/nav_predication"
+        android:icon="@drawable/forecast"
+        android:title="@string/predication" />
+    <item
+        android:id="@+id/nav_test"
+        android:icon="@drawable/test"
+        android:title="اجري الاختبار" />
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_menu"
+        android:title="القائمة" />
+</menu>

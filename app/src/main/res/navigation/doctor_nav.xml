@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doctor_nav"
+    app:startDestination="@id/mainView">
+    <fragment
+        android:id="@+id/mainView"
+        android:name="com.example.alwanyapp.Presentation.Doctor.DoctorMainView"
+        android:label="الاستشارات الطبية"
+        tools:layout="@layout/fragment_docotr_main_view" >
+        <action
+            android:id="@+id/action_mainView_to_consDetails"
+            app:destination="@id/consDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/consDetails"
+        android:name="com.example.alwanyapp.Presentation.Doctor.DoctorViewConsultationDetails"
+        android:label="تفاصل الاستشارة الطبية"
+        tools:layout="@layout/fragment_doctor_view_consultation_details" >
+        <action
+            android:id="@+id/action_consDetails_to_replay"
+            app:destination="@id/replay" />
+        <action
+            android:id="@+id/action_consDetails_to_chat"
+            app:destination="@id/chat" />
+        <action
+            android:id="@+id/action_consDetails_to_mainView"
+            app:destination="@id/mainView" />
+    </fragment>
+    <fragment
+        android:id="@+id/replay"
+        android:name="com.example.alwanyapp.Presentation.Doctor.DoctorSendReplay"
+        android:label="الرد"
+        tools:layout="@layout/fragment_doctor_send_replay" >
+        <action
+            android:id="@+id/action_replay_to_consDetails"
+            app:destination="@id/consDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.alwanyapp.Presentation.Chat.ChatFragment"
+        android:label="الدردشة"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chat_to_consDetails"
+            app:destination="@id/consDetails" />
+        <action
+            android:id="@+id/action_chat_to_viewUsers"
+            app:destination="@id/viewUsers" />
+    </fragment>
+    <fragment android:id="@+id/viewUsers"
+        tools:layout="@layout/fragment_view_users"
+        android:name="com.example.alwanyapp.Presentation.Chat.ViewUsers"
+        android:label="الدردشة">
+        <action
+            android:id="@+id/action_viewUsers_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
+</navigation>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    tools:context=".Presentation.auth.SignIn.LoginFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_100sdp"
+        android:background="@drawable/login_background_shape"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/view"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_176sdp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageView" />
+
+    <TextView
+        android:id="@+id/sign_in_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/color2"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/sign_in_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="وداعا لعمى الألوان"
+        android:textColor="@color/color2"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/green_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_body">
+
+        <EditText
+            android:id="@+id/sign_in_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/white_rounded_background"
+            android:drawableStart="@drawable/ic_account"
+            android:enabled="true"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="16dp"
+            android:textColor="@color/color2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/sign_in_passwordTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/white_rounded_background"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingVertical="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in_email">
+
+            <EditText
+                android:id="@+id/sign_in_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_lock"
+                android:gravity="center|end"
+                android:inputType="textPassword"
+                android:background="@color/white"
+                android:padding="0dp"
+                android:password="true"
+                android:textColor="@color/color2"
+                android:textColorHint="@color/color2"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                tools:ignore="Deprecated" />
+
+            <ImageView
+                android:id="@+id/showPassword"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:src="@drawable/baseline_visibility_off_24" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/rememberMy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/color2"
+            android:text="تذكرني"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/sign_in_passwordTIL"
+            app:layout_constraintTop_toBottomOf="@id/sign_in_passwordTIL" />
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:gravity="center"
+            android:text="هل نسيت كلمة المرور؟"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/sign_in_passwordTIL"
+            app:layout_constraintTop_toBottomOf="@id/sign_in_passwordTIL" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signin_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/rounded_button_background"
+            android:padding="0dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/sign_in_passwordTIL"
+            app:layout_constraintStart_toStartOf="@+id/sign_in_passwordTIL"
+            app:layout_constraintTop_toBottomOf="@+id/forgetPassword" />
+
+        <TextView
+            android:id="@+id/sign_up_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/do_not_have_account_sign_up"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/signin_btn"
+            app:layout_constraintStart_toStartOf="@+id/signin_btn"
+            app:layout_constraintTop_toBottomOf="@+id/signin_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

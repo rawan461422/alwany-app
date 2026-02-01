@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav"
+    app:startDestination="@id/doctors">
+    <fragment android:id="@+id/doctors"
+        android:label="الاطباء"
+        android:name="com.example.alwanyapp.Presentation.Patient.Doctors.PatientViewDoctor"
+        tools:layout="@layout/fragment_patient_view_doctor">
+        <action
+            android:id="@+id/action_doctors_to_sendConsultation"
+            app:destination="@id/sendConsultation" />
+        <action
+            android:id="@+id/action_doctors_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
+
+    <fragment android:id="@+id/sendConsultation"
+        android:label="إرسال استشارة طبية"
+        tools:layout="@layout/fragment_patient_send_consultations"
+        android:name="com.example.alwanyapp.Presentation.Patient.Consultations.PatientSendConsultations">
+        <action
+            android:id="@+id/action_sendConsultation_to_doctors"
+            app:destination="@id/doctors" />
+    </fragment>
+
+    <fragment android:id="@+id/consultations"
+        tools:layout="@layout/fragment_patient_view_all_consultations"
+        android:name="com.example.alwanyapp.Presentation.Patient.Consultations.PatientViewAllConsultations"
+        android:label="الاستشارات الطبية">
+        <action
+            android:id="@+id/action_consultations_to_consultationsReplay"
+            app:destination="@id/consultationsReplay" />
+    </fragment>
+    <fragment android:id="@+id/consultationsReplay"
+        android:name="com.example.alwanyapp.Presentation.Patient.Consultations.PatientViewConsultationReplay"
+        android:label="الاستشارة الطبية"
+        tools:layout="@layout/fragment_patient_view_consultation_replay">
+        <action
+            android:id="@+id/action_consultationsReplay_to_consultations"
+            app:destination="@id/consultations" />
+    </fragment>
+    <fragment android:id="@+id/profile"
+        android:name="com.example.alwanyapp.Presentation.Patient.PatientProfile"
+        tools:layout="@layout/fragment_patient_profile"
+        android:label="الملف الشخصي"/>
+
+
+    <fragment
+        android:id="@+id/nav_hospital"
+        android:name="com.example.alwanyapp.Presentation.auth.Hospitals.ViewHospitals"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_color"
+        android:name="com.example.alwanyapp.Presentation.auth.Colors.ViewColors"
+        android:label="@string/menu_colors"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/colorsGuide"
+        android:name="com.example.alwanyapp.Presentation.auth.ColorsGuide.ColorsGuide"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_colors_guide" />
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.alwanyapp.Presentation.auth.Informations.InformationFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_information" >
+        <action
+            android:id="@+id/action_nav_info_to_nav_info_details"
+            app:destination="@id/nav_info_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_info_details"
+        android:name="com.example.alwanyapp.Presentation.auth.Informations.InfoDetailsFragment"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_info_details" />
+    <fragment
+        android:id="@+id/nav_helper_apps"
+        android:name="com.example.alwanyapp.Presentation.auth.Apps.HelperAppsFragment"
+        android:label="@string/menu_apps"
+        tools:layout="@layout/fragment_helper_apps" >
+        <action
+            android:id="@+id/action_nav_helper_apps_to_nav_helper_apps_details"
+            app:destination="@id/nav_helper_apps_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_helper_apps_details"
+        android:name="com.example.alwanyapp.Presentation.auth.Apps.ViewAppDetails"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_view_app_details" />
+    <fragment
+        android:id="@+id/nav_predication"
+        android:name="com.example.alwanyapp.Presentation.auth.PredictColor.PredictColorFragment"
+        android:label="@string/predication"
+        tools:layout="@layout/fragment_predict_color" />
+    <fragment
+        android:id="@+id/nav_test"
+        android:name="com.example.alwanyapp.Presentation.auth.Test.TestFragment"
+        android:label="@string/test"
+        tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.example.alwanyapp.Presentation.auth.aboutUs.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.alwanyapp.Presentation.Chat.ChatFragment"
+        android:label="الدردشة"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chat_to_consDetails"
+            app:destination="@id/consDetails" />
+        <action
+            android:id="@+id/action_chat_to_viewUsers"
+            app:destination="@id/viewUsers" />
+        <action
+            android:id="@+id/action_chat_to_doctors"
+            app:destination="@id/doctors" />
+    </fragment>
+    <fragment android:id="@+id/viewUsers"
+        tools:layout="@layout/fragment_view_users"
+        android:name="com.example.alwanyapp.Presentation.Chat.ViewUsers"
+        android:label="الدردشة">
+        <action
+            android:id="@+id/action_viewUsers_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
+</navigation>

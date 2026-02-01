@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "848620609848",
+    "project_id": "alwany-a2860",
+    "storage_bucket": "alwany-a2860.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848620609848:android:b53729e6bdc870d5e4a1cd",
+        "android_client_info": {
+          "package_name": "com.example.alwanyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCw_fpT7v-cU1Gv_hAtwB9WvMjuyoV9Ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

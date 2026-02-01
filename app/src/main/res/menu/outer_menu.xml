@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/aboutApp"
+        android:icon="@drawable/information"
+        android:title="@string/menu_about_us" />
+    <item
+        android:id="@+id/nav_predication"
+        android:icon="@drawable/forecast"
+        android:title="@string/predication" />
+    <item
+        android:id="@+id/nav_test"
+        android:icon="@drawable/test"
+        android:title="اجري الاختبار" />
+    <item
+        android:id="@+id/login"
+        android:icon="@drawable/baseline_login_24"
+        android:title="تسجيل الدخول" />
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_menu"
+        android:title="القائمة" />
+</menu>
