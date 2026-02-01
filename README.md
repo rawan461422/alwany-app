@@ -31,7 +31,7 @@ The app provides tools for color detection, testing, visual guidance, and consul
 ![Login Screen](screenshots/login.png)
 ![Color Test](screenshots/color_test.png)
 ![Consultation Chat](screenshots/consultation_chat.png)
-![User Profile](screenshots/user_profile.png)
+
 
 Project Structure
 
